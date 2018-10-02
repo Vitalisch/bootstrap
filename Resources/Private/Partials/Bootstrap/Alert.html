@@ -1,0 +1,11 @@
+<div class="alert alert-{data.color_style} alert-dismissible fade show" role="alert">
+    <f:if condition="{data.header}">
+        <div class="h{data.header_layout} text-{data.header_position} alert-heading">{data.header}</div>
+    </f:if>
+    <f:format.html>{data.bodytext}</f:format.html>
+    <f:if condition="{data.dismissible}">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </f:if>
+</div>

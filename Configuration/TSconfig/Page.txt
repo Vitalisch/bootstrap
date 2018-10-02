@@ -1,0 +1,22 @@
+mod.wizards.newContentElement.wizardItems.extra {
+    header = Bootstrap
+    elements {
+        bootstrap_alert {
+            iconIdentifier = content-header
+            title = Alerts
+            description = Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+            tt_content_defValues {
+                CType = bootstrap_alert
+            }
+        }
+        bootstrap_card {
+            iconIdentifier = content-header
+            title = Cards
+            description = A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+            tt_content_defValues {
+                CType = bootstrap_card
+            }
+        }
+    }
+    show = *
+}

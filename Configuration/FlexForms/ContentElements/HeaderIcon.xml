@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Textpic</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <color type="array">
+                        <TCEforms type="array">
+                            <label>Textfarbe</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">Primärfarben</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Dunkelblau (Image Unternehmen)</numIndex>
+                                        <numIndex index="1">blue-dark</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Hellgrün (Bachelor)</numIndex>
+                                        <numIndex index="1">green-light</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Violett (Master)</numIndex>
+                                        <numIndex index="1">violet</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Hellblau (Hochschul-Zertifikate)</numIndex>
+                                        <numIndex index="1">blue-light</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">Sekundärfarben</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">Dunkelgrün</numIndex>
+                                        <numIndex index="1">green-dark</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">Pflaume</numIndex>
+                                        <numIndex index="1">plum</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">Blau</numIndex>
+                                        <numIndex index="1">blue</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">Sonderfarben</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">Orange</numIndex>
+                                        <numIndex index="1">orange</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">Gelb</numIndex>
+                                        <numIndex index="1">yellow</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">Grautöne</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">Hellgrau</numIndex>
+                                        <numIndex index="1">gray-light</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">Grau</numIndex>
+                                        <numIndex index="1">gray</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">Dunkelgrau</numIndex>
+                                        <numIndex index="1">gray-dark</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </color>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
