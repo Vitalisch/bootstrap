@@ -1,5 +1,5 @@
 <?php
-namespace Knowex\Bootstrap\DataProcessing;
+namespace KnowEx\Bootstrap\DataProcessing;
 
 /*
  * This file is part of the TYPO3 CMS project.

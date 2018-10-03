@@ -22,7 +22,7 @@ use TYPO3\CMS\Extbase\Service\FlexFormService;
 /**
  * Class for data processing for the content element "My new content element"
  */
-class AlertProcessor implements DataProcessorInterface
+class ListProcessor implements DataProcessorInterface
 {
 
     /**
