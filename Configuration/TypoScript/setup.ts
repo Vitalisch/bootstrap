@@ -13,6 +13,47 @@ page {
 
 tt_content {
 
+    # Ausgabe der Grid Elemente
+    gridelements_pi1 {
+        20 {
+            10 {
+                setup {
+                    # ID des gridelements
+                    1 < lib.gridelements.defaultGridSetup
+                    1 {
+                        wrap = <div class="row">|</div>
+                        columns {
+                            # colPos ID
+                            101 < .default
+                            101.wrap = <div class="col-md-6">|</div>
+                            # colPos ID
+                            102 < .default
+                            102.wrap = <div class="col-md-6">|</div>
+                        }
+                    }
+
+                    # Slider
+                    card < lib.gridelements.defaultGridSetup
+                    card {
+                        columns {
+                            # colPos ID
+                            101 < .default
+                            101 {
+                                cObject = FLUIDTEMPLATE
+                                cObject {
+                                    file = EXT:bootstrap/Resources/Private/Templates/ContentElements/Card.html
+                                    dataProcessing {
+                                        10 = KnowEx\Bootstrap\DataProcessing\CardProcessor
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     # Alerts
     bootstrap_alert = FLUIDTEMPLATE
     bootstrap_alert {

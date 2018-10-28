@@ -28,3 +28,24 @@ mod.wizards.newContentElement.wizardItems.extra {
     }
     show = *
 }
+
+tx_gridelements {
+    setup {
+        card {
+            title = Card
+            description = Description
+            #iconIdentifier = tx-bootstrapgrids-slider
+            frame = 1
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 1
+                rows.1.columns.1 {
+                    name = Card Elements
+                    colPos = 101
+                }
+            }
+            #flexformDS = FILE:EXT:bootstrap_grids/Configuration/FlexForm/flexform_slider.xml
+        }
+    }
+}

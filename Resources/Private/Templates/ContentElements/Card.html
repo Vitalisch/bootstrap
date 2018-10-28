@@ -1,7 +1,8 @@
 <div class="card">
     <f:image src="EXT:bootstrap/Resources/Public/Images/AdobeStock_129978198_Preview.jpeg" class="card-img-top w-100 h-auto" alt="Card image cap"/>
-    <h5 class="card-header">Featured</h5>
+    <div class="h{data.header_layout} card-header">{data.header}</div>
     <div class="card-body">
+        <f:format.raw>{data.tx_gridelements_view_child_6}</f:format.raw>
         <h5 class="card-title">Card title</h5>
         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -20,3 +21,4 @@
         2 days ago
     </div>
 </div>
+<f:debug>{_all}</f:debug>
