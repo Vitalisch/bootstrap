@@ -25,6 +25,14 @@ mod.wizards.newContentElement.wizardItems.extra {
                 CType = bootstrap_list
             }
         }
+        card_body {
+            iconIdentifier = content-header
+            title = card-body
+            description = List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
+            tt_content_defValues {
+                CType = card_body
+            }
+        }
     }
     show = *
 }
@@ -40,12 +48,105 @@ tx_gridelements {
             config {
                 colCount = 1
                 rowCount = 1
-                rows.1.columns.1 {
-                    name = Card Elements
-                    colPos = 101
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Card Elements
+                                colPos = 101
+                            }
+                        }
+                    }
                 }
             }
             #flexformDS = FILE:EXT:bootstrap_grids/Configuration/FlexForm/flexform_slider.xml
+        }
+        col2 {
+            title = 2 Cols
+            description = Description
+            iconIdentifier = tx-bootstrapgrids-col2
+            frame = 1
+            topLevelLayout = 0
+            config {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Col1
+                                colPos = 101
+                            }
+                            2 {
+                                name = Col2
+                                colPos = 102
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        col3 {
+            title = 3 Cols
+            description = Description
+            iconIdentifier = tx-bootstrapgrids-col3
+            frame = 1
+            topLevelLayout = 0
+            config {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Col1
+                                colPos = 101
+                            }
+                            2 {
+                                name = Col2
+                                colPos = 102
+                            }
+                            3 {
+                                name = Col3
+                                colPos = 103
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        col4 {
+            title = 4 Cols
+            description = Description
+            iconIdentifier = tx-bootstrapgrids-col4
+            frame = 1
+            topLevelLayout = 0
+            config {
+                colCount = 4
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Col1
+                                colPos = 101
+                            }
+                            2 {
+                                name = Col2
+                                colPos = 102
+                            }
+                            3 {
+                                name = Col3
+                                colPos = 103
+                            }
+                            4 {
+                                name = Col4
+                                colPos = 104
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

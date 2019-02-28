@@ -1,13 +1,12 @@
 <div class="card">
-    <f:image src="EXT:bootstrap/Resources/Public/Images/AdobeStock_129978198_Preview.jpeg" class="card-img-top w-100 h-auto" alt="Card image cap"/>
-    <div class="h{data.header_layout} card-header">{data.header}</div>
-    <div class="card-body">
-        <f:format.raw>{data.tx_gridelements_view_child_6}</f:format.raw>
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+    <f:image src="EXT:bootstrap/Resources/Public/Images/AdobeStock_129978198_Preview.jpeg"
+             class="card-img-top w-100 h-auto" alt="Card image cap"/>
+    <f:if condition="{data.header}">
+        <div class="h{data.header_layout} card-header">{data.header -> f:format.raw()}</div>
+    </f:if>
+    <f:for each="{data.tx_gridelements_view_children}" as="child">
+        <f:format.raw>{data.tx_gridelements_view_child_{child.uid}}</f:format.raw>
+    </f:for>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Cras justo odio</li>
         <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -21,4 +20,3 @@
         2 days ago
     </div>
 </div>
-<f:debug>{_all}</f:debug>

@@ -32,7 +32,58 @@ tt_content {
                         }
                     }
 
-                    # Slider
+                    # ID des gridelements
+                    col2 < lib.gridelements.defaultGridSetup
+                    col2 {
+                        wrap = <div class="row">|</div>
+                        columns {
+                            # colPos ID
+                            101 < .default
+                            101.wrap = <div class="col">|</div>
+                            # colPos ID
+                            102 < .default
+                            102.wrap = <div class="col">|</div>
+                        }
+                    }
+
+                    # ID des gridelements
+                    col3 < lib.gridelements.defaultGridSetup
+                    col3 {
+                        wrap = <div class="row">|</div>
+                        columns {
+                            # colPos ID
+                            101 < .default
+                            101.wrap = <div class="col-md-4">|</div>
+                            # colPos ID
+                            102 < .default
+                            102.wrap = <div class="col-md-4">|</div>
+                            # colPos ID
+                            103 < .default
+                            103.wrap = <div class="col-md-4">|</div>
+                        }
+                    }
+
+                    # ID des gridelements
+                    col4 < lib.gridelements.defaultGridSetup
+                    col4 {
+                        wrap = <div class="row">|</div>
+                        columns {
+                            # colPos ID
+                            101 < .default
+                            101.wrap = <div class="col-md-3">|</div>
+                            # colPos ID
+                            102 < .default
+                            102.wrap = <div class="col-md-3">|</div>
+                            # colPos ID
+                            103 < .default
+                            103.wrap = <div class="col-md-3">|</div>
+                            # colPos ID
+                            104 < .default
+                            104.wrap = <div class="col-md-3">|</div>
+                        }
+                    }
+
+                    # Card
                     card < lib.gridelements.defaultGridSetup
                     card {
                         columns {
@@ -69,6 +120,15 @@ tt_content {
         file = EXT:bootstrap/Resources/Private/Templates/ContentElements/Card.html
         dataProcessing {
             10 = KnowEx\Bootstrap\DataProcessing\CardProcessor
+        }
+    }
+
+    # Cards
+    card_body = FLUIDTEMPLATE
+    card_body {
+        file = EXT:bootstrap/Resources/Private/Templates/ContentElements/CardBody.html
+        dataProcessing {
+            #10 = KnowEx\Bootstrap\DataProcessing\CardProcessor
         }
     }
 
