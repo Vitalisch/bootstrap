@@ -33,6 +33,14 @@ mod.wizards.newContentElement.wizardItems.extra {
                 CType = card_body
             }
         }
+        bootstrap_nav {
+            iconIdentifier = content-menu-section
+            title = Tabs mit Inhalte
+            description = Tabs mit Inhalte
+            tt_content_defValues {
+                CType = bootstrap_nav
+            }
+        }
     }
     show = *
 }

@@ -1,4 +1,61 @@
 <?php
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'tt_content',
+    [
+        'content_elements' => [
+            'exclude' => true,
+            'label' => 'Content elements',
+            'config' => [
+                'type' => 'inline',
+                'allowed' => 'tt_content',
+                'foreign_table' => 'tt_content',
+                'foreign_sortby' => 'sorting',
+                'foreign_field' => 'bootstrap_content_elements',
+                'overrideChildTca' => [
+                    'columns' => [
+                        'colPos' => [
+                            'config' => [
+                                'default' => 3,
+                            ],
+                        ],
+                    ],
+                ],
+                'appearance' => [
+                    'collapseAll' => true,
+                    'expandSingle' => true,
+                    'levelLinksPosition' => 'bottom',
+                    'useSortable' => true,
+                ]
+            ]
+        ],
+    ]
+);
+
+//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+//    'tt_content',
+//    [
+//        'knowex_content_elements' => [
+//            'exclude' => true,
+//            'l10n_mode' => 'mergeIfNotBlank',
+//            'label' => 'content_elements',
+//            'config' => [
+//                'type' => 'inline',
+//                'allowed' => 'tx_sgdtemplate_domain_model_contentelements',
+//                'foreign_table' => 'tx_sgdtemplate_domain_model_contentelements',
+//                'foreign_sortby' => 'sorting',
+//                'appearance' => [
+//                    'collapseAll' => true,
+//                    'expandSingle' => true,
+//                    'levelLinksPosition' => 'bottom',
+//                    'useSortable' => true,
+//                    //'newRecordLinkTitle' => 'Neue Tab'
+//                ]
+//            ]
+//        ],
+//    ]
+//);
+
+
 /*** Alerts ***/
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
@@ -163,4 +220,36 @@ $GLOBALS['TCA']['tt_content']['types']['bootstrap_list'] = [
             ],
         ],
     ],
+];
+
+/*** Nav mit Inhalte ***/
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'Tabs mit Inhalte',
+        'bootstrap_nav',
+        ''
+    ),
+    'CType',
+    'bootstrap'
+);
+$GLOBALS['TCA']['tt_content']['types']['bootstrap_nav'] = [
+    'showitem' => '
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+        --div--;Bootstrap,pi_flexform,
+            content_elements;Content Elements,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+            --palette--;;language,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+            categories,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
+            rowDescription,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
+    '
 ];

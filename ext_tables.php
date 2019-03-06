@@ -5,6 +5,7 @@ call_user_func(
     function($extKey)
     {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript', 'Bootstrap 4.1');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_bootstrap_domain_model_contentelements');
     },
     $_EXTKEY
 );
